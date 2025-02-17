@@ -1,3 +1,5 @@
+<!--用户管理页面-->
+
 <template>
   <div class="userManagePage">
     <!-- 搜索表单 -->
@@ -92,6 +94,8 @@ const total = ref(0)
 const searchParams = reactive<API.UserQueryRequest>({
   current: 1,
   pageSize: 10,
+  sortField: 'createTime',
+  sortOrder: 'ascend',
 })
 
 // 分页参数
